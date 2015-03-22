@@ -156,8 +156,9 @@ namespace Lags
             if (ordres.Count() == 0)
                 return 0.0;
             Ordre order = ordres.ElementAt(0);
-            // Astuuuuuuce!
-            List<Ordre> liste = ordres.Where(ordre => ordre.debut >= order.fin()).ToList();
+            // attention ne marche pas pour les ordres qui depassent la fin de l'année 
+            // voir ticket PLAF nO 4807 
+            List<Ordre> liste = ordres.Where(ordre => ordre.debut >= order.debut + order.duree).ToList();
             List<Ordre> liste2 = ordres.GetRange(1, ordres.Count() - 1);
             double ca = order.prix + CA(liste);
             // Lapin compris?

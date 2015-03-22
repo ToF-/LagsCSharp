@@ -26,11 +26,5 @@ namespace Lags
 
         public double prix { get; set; }
 
-        // attention ne marche pas pour les ordres qui depassent la fin de l'année 
-        // voir ticket PLAF nO 4807 
-        internal int fin()
-        {
-            return this.debut + duree;
-        }
     }
 }
