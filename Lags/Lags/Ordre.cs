@@ -14,7 +14,6 @@ namespace Lags
             this.debut = debut;  // au format AAAAJJJ par exemple 25 février 2015 = 2015056
             this.duree = duree;
             this.prix = prix;
-
         }
 
         // getters et setters
