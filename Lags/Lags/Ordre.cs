@@ -17,13 +17,13 @@ namespace Lags
         }
 
         // getters et setters
-
+        //id de l'ordre 
         public string id { get; set; }
-
+        // debut
         public int debut { get; set; }
-
+        // duree
         public int duree { get; set; }
-
+        // valeur
         public double prix { get; set; }
 
     }
