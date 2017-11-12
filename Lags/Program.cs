@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace Lags
 {
     
-    class Program
+    public class Program
     {
         const bool debug = true;
         // ==================
@@ -19,7 +19,7 @@ namespace Lags
         static void Main(string[] args)
         {
             LagsService service = new LagsService();
-            service.getFichierOrder("ORDRES.CSV");
+            service.getFichierOrder("../ORDRES.CSV");
             bool flag = false;
             // tant que ce n'est pas la fin du programme
             while (!flag)

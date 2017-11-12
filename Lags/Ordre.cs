@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lags
 {
-    class Ordre
+    public class Ordre
     {
         public Ordre(String id, int debut, int duree, double prix)
         {
