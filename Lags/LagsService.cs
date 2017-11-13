@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Lags
 {
-    class LagsService
+    public class LagsService
     {
         List<Ordre> ListOrdre = new List<Ordre>();
 
